@@ -1,0 +1,49 @@
+<com.mingwei.floatlayout.FloatLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/float_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@android:color/holo_blue_bright" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/float_top_layout_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/float_layout_float"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/holo_green_light"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/float_layout_test_listview" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/float_layout_test_scrollview" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/float_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light" >
+    </android.support.v4.view.ViewPager>
+
+</com.mingwei.floatlayout.FloatLayout>

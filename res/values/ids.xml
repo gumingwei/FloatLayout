@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="float_layout_inner_view" type="id"/>
+    <item name="float_layout_content" type="id"/>
+
+</resources>
